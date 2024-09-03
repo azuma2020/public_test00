@@ -4,7 +4,7 @@ name: Deploy tests/pytest_log in 8-pytest--html-1h
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["8-pytest--html-1h"]
+    branches: ["gh-pages"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
