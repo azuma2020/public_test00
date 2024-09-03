@@ -1,5 +1,5 @@
 # Simple workflow for deploying static content to GitHub Pages
-name: Deploy tests/pytest_log in 8-pytest--html-1h
+name: Deploy tests/pytest_log in gh-pages
 
 on:
   # Runs on pushes targeting the default branch
