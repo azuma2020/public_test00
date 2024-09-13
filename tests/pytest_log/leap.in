@@ -1,0 +1,8 @@
+
+source leaprc.gaff
+loadamberparams frcmod.ionsjc_tip3p
+set default nocenter on
+loadamberparams frcmod.ionsjc_tip3p
+mol = loadmol2 tests/inputs/nafion_monomer_bcc.mol2
+saveamberparm mol tests/pytest_log/nafion_monomer_bcc.prmtop tests/pytest_log/nafion_monomer_bcc.inpcrd
+quit
