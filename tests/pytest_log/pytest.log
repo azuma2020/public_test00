@@ -1,6 +1,6 @@
-2024-09-20 21:44:27 - psi4.optking.optwrapper DEBUG Creating a Compute Wrapper
-2024-09-20 21:44:27 - psi4.optking.optwrapper INFO Creating a UserComputer
-2024-09-20 21:44:27 - psi4.optking.optwrapper INFO 
+2024-09-20 22:06:02 - psi4.optking.optwrapper DEBUG Creating a Compute Wrapper
+2024-09-20 22:06:02 - psi4.optking.optwrapper INFO Creating a UserComputer
+2024-09-20 22:06:02 - psi4.optking.optwrapper INFO 
     			-----------------------------------------
 
     			 OPTKING 3.0: for geometry optimizations 
@@ -14,7 +14,7 @@
     			-----------------------------------------
 
     
-2024-09-20 21:44:27 - psi4.optking.optwrapper INFO 
+2024-09-20 22:06:02 - psi4.optking.optwrapper INFO 
 		 -- Optimization Parameters --
 	accept_symmetry_breaking       =           False
 	add_auxiliary_bonds            =           False
@@ -126,17 +126,17 @@
 	working_steps_since_last_H     =               0
 
 
-2024-09-20 21:44:27 - psi4.optking.molsys DEBUG 	Converting psi4 molecular system to schema
-2024-09-20 21:44:28 - psi4.optking.molsys DEBUG 	Generating molecular system for optimization from QC Schema.
+2024-09-20 22:06:02 - psi4.optking.molsys DEBUG 	Converting psi4 molecular system to schema
+2024-09-20 22:06:03 - psi4.optking.molsys DEBUG 	Generating molecular system for optimization from QC Schema.
 
-2024-09-20 21:44:28 - psi4.optking.optimize DEBUG 	 Adding internal coordinates to molecular system
-2024-09-20 21:44:28 - psi4.optking.optimize DEBUG Connectivity Matrix
+2024-09-20 22:06:03 - psi4.optking.optimize DEBUG 	 Adding internal coordinates to molecular system
+2024-09-20 22:06:03 - psi4.optking.optimize DEBUG Connectivity Matrix
 	   0.000000   1.000000   1.000000
 	   1.000000   0.000000   0.000000
 	   1.000000   0.000000   0.000000
 
-2024-09-20 21:44:28 - psi4.optking.molsys DEBUG 	Augmenting connectivity matrix to join fragments.
-2024-09-20 21:44:28 - psi4.optking.opt_helper INFO Molsys:
+2024-09-20 22:06:03 - psi4.optking.molsys DEBUG 	Augmenting connectivity matrix to join fragments.
+2024-09-20 22:06:03 - psi4.optking.opt_helper INFO Molsys:
 
 	                            ===> Fragment 1 <== 
 
@@ -150,14 +150,14 @@
 	 R(1,3)           =         1.810163           0.957897
 	 B(2,1,3)         =         1.817236         104.119931
 
-2024-09-20 21:44:28 - psi4.driver.task_planner INFO PLANNING Atomic:  keywords={'G_CONVERGENCE': 'NWCHEM_LOOSE', 'function_kwargs': {}}
-2024-09-20 21:44:28 - psi4.driver.driver DEBUG GRADIENT PLAN
-2024-09-20 21:44:28 - psi4.driver.driver DEBUG {'basis': '6-31g*',
+2024-09-20 22:06:03 - psi4.driver.task_planner INFO PLANNING Atomic:  keywords={'G_CONVERGENCE': 'NWCHEM_LOOSE', 'function_kwargs': {}}
+2024-09-20 22:06:03 - psi4.driver.driver DEBUG GRADIENT PLAN
+2024-09-20 22:06:03 - psi4.driver.driver DEBUG {'basis': '6-31g*',
  'computed': False,
  'driver': <DriverEnum.gradient: 'gradient'>,
  'keywords': {'G_CONVERGENCE': 'NWCHEM_LOOSE', 'function_kwargs': {}},
  'method': 'hf',
- 'molecule': <psi4.core.Molecule object at 0x7fafb8109850>,
+ 'molecule': <psi4.core.Molecule object at 0x7f8cfd7fc830>,
  'opt_iter': True,
  'owner_group': None,
  'priority': 1,
@@ -165,8 +165,8 @@
  'result': {},
  'result_id': None,
  'tag': '*'}
-2024-09-20 21:44:28 - psi4.driver.driver INFO Compute gradient(): method=hf, basis=6-31g*, molecule=default, nre=9.189222121030635
-2024-09-20 21:44:28 - psi4.driver.driver DEBUG {'elbl': array(['', '', ''], dtype='<U1'),
+2024-09-20 22:06:03 - psi4.driver.driver INFO Compute gradient(): method=hf, basis=6-31g*, molecule=default, nre=9.189222121030635
+2024-09-20 22:06:03 - psi4.driver.driver DEBUG {'elbl': array(['', '', ''], dtype='<U1'),
  'elea': array([16,  1,  1]),
  'elem': array(['O', 'H', 'H'], dtype='<U1'),
  'elez': array([8, 1, 1]),
@@ -183,52 +183,52 @@
  'provenance': {'creator': 'QCElemental', 'routine': 'qcelemental.molparse.from_string', 'version': '0.28.0'},
  'real': array([ True,  True,  True]),
  'units': 'Angstrom'}
-2024-09-20 21:44:28 - psi4.driver.driver INFO Return gradient(): -76.010455282031
-2024-09-20 21:44:28 - psi4.driver.driver INFO [[-0.00000000  0.00000000  0.01660205]
+2024-09-20 22:06:03 - psi4.driver.driver INFO Return gradient(): -76.01045528203102
+2024-09-20 22:06:03 - psi4.driver.driver INFO [[-0.00000000  0.00000000  0.01660205]
  [-0.00000000  0.00748617 -0.00830102]
  [ 0.00000000 -0.00748617 -0.00830102]]
-2024-09-20 21:44:28 - psi4.optking.opt_helper DEBUG Guessing hessian
-2024-09-20 21:44:28 - psi4.optking.linearAlgebra DEBUG Singular | values | > 2.345e-10 will be inverted.
-2024-09-20 21:44:28 - psi4.optking.linearAlgebra DEBUG Smallest inverted value is 7.809e-01.
-2024-09-20 21:44:28 - psi4.optking.linearAlgebra DEBUG Singular | values | > 2.345e-06 will be inverted.
-2024-09-20 21:44:28 - psi4.optking.linearAlgebra DEBUG Smallest inverted value is 7.809e-01.
-2024-09-20 21:44:28 - psi4.optking.molsys DEBUG 
+2024-09-20 22:06:03 - psi4.optking.opt_helper DEBUG Guessing hessian
+2024-09-20 22:06:03 - psi4.optking.linearAlgebra DEBUG Singular | values | > 2.345e-10 will be inverted.
+2024-09-20 22:06:03 - psi4.optking.linearAlgebra DEBUG Smallest inverted value is 7.809e-01.
+2024-09-20 22:06:03 - psi4.optking.linearAlgebra DEBUG Singular | values | > 2.345e-06 will be inverted.
+2024-09-20 22:06:03 - psi4.optking.linearAlgebra DEBUG Smallest inverted value is 7.809e-01.
+2024-09-20 22:06:03 - psi4.optking.molsys DEBUG 
 	Internal forces in au, after projection of redundancies and constraints.
 	 -0.011008 -0.011008  0.003519
 
-2024-09-20 21:44:28 - psi4.optking.molsys INFO Projected (PHP) Hessian matrix
+2024-09-20 22:06:03 - psi4.optking.molsys INFO Projected (PHP) Hessian matrix
 	   0.559282   0.000000   0.000000
 	   0.000000   0.559282   0.000000
 	   0.000000   0.000000   0.160000
 
-2024-09-20 21:44:28 - psi4.optking.opt_helper INFO 
+2024-09-20 22:06:03 - psi4.optking.opt_helper INFO 
 	         Geometry (au)                                       Gradient (au)
-   0.0000000000   0.0000000000   0.1245561284		  -0.0000000000   0.0000000000   0.0166020460
-  -0.0000000000   1.4275936015  -0.9883980731		  -0.0000000000   0.0074861721  -0.0083010230
-   0.0000000000  -1.4275936015  -0.9883980731		   0.0000000000  -0.0074861721  -0.0083010230
+   0.0000000000   0.0000000000   0.1245561284		  -0.0000000000   0.0000000000   0.0166020459
+  -0.0000000000   1.4275936015  -0.9883980731		  -0.0000000000   0.0074861719  -0.0083010229
+   0.0000000000  -1.4275936015  -0.9883980731		   0.0000000000  -0.0074861719  -0.0083010229
 
-2024-09-20 21:44:28 - psi4.optking.molsys DEBUG Converting gradient from internals to Cartesians.
+2024-09-20 22:06:03 - psi4.optking.molsys DEBUG Converting gradient from internals to Cartesians.
 
-2024-09-20 21:44:28 - psi4.optking.stepAlgorithms DEBUG 	Taking RFO optimization step.
-2024-09-20 21:44:28 - psi4.optking.stepAlgorithms DEBUG 	Checking RFO solution 1.
-2024-09-20 21:44:28 - psi4.optking.stepAlgorithms INFO 	Using RFO solution 1.
-2024-09-20 21:44:28 - psi4.optking.stepAlgorithms DEBUG 	Determining step-restricting scale parameter (alpha) for RS-RFO.
-2024-09-20 21:44:28 - psi4.optking.stepAlgorithms DEBUG 
+2024-09-20 22:06:03 - psi4.optking.stepAlgorithms DEBUG 	Taking RFO optimization step.
+2024-09-20 22:06:03 - psi4.optking.stepAlgorithms DEBUG 	Checking RFO solution 1.
+2024-09-20 22:06:03 - psi4.optking.stepAlgorithms INFO 	Using RFO solution 1.
+2024-09-20 22:06:03 - psi4.optking.stepAlgorithms DEBUG 	Determining step-restricting scale parameter (alpha) for RS-RFO.
+2024-09-20 22:06:03 - psi4.optking.stepAlgorithms DEBUG 
 		 Iter    |step|        alpha      rfo_root  
 	----------------------------------------------------
 		  1     0.035411         1            1     
-2024-09-20 21:44:28 - psi4.optking.stepAlgorithms DEBUG 	Final scaled step dq:
+2024-09-20 22:06:03 - psi4.optking.stepAlgorithms DEBUG 	Final scaled step dq:
 
 		 -0.019664 -0.019664  0.021922
 
-2024-09-20 21:44:28 - psi4.optking.displace INFO 	Determining Cartesian step for fragment 1.
-2024-09-20 21:44:28 - psi4.optking.linearAlgebra DEBUG Singular | values | > 2.345e-06 will be inverted.
-2024-09-20 21:44:28 - psi4.optking.linearAlgebra DEBUG Smallest inverted value is 7.809e-01.
-2024-09-20 21:44:28 - psi4.optking.linearAlgebra DEBUG Singular | values | > 2.352e-06 will be inverted.
-2024-09-20 21:44:28 - psi4.optking.linearAlgebra DEBUG Smallest inverted value is 7.956e-01.
-2024-09-20 21:44:28 - psi4.optking.linearAlgebra DEBUG Singular | values | > 2.352e-06 will be inverted.
-2024-09-20 21:44:28 - psi4.optking.linearAlgebra DEBUG Smallest inverted value is 7.956e-01.
-2024-09-20 21:44:28 - psi4.optking.displace DEBUG 
+2024-09-20 22:06:03 - psi4.optking.displace INFO 	Determining Cartesian step for fragment 1.
+2024-09-20 22:06:03 - psi4.optking.linearAlgebra DEBUG Singular | values | > 2.345e-06 will be inverted.
+2024-09-20 22:06:03 - psi4.optking.linearAlgebra DEBUG Smallest inverted value is 7.809e-01.
+2024-09-20 22:06:03 - psi4.optking.linearAlgebra DEBUG Singular | values | > 2.352e-06 will be inverted.
+2024-09-20 22:06:03 - psi4.optking.linearAlgebra DEBUG Smallest inverted value is 7.956e-01.
+2024-09-20 22:06:03 - psi4.optking.linearAlgebra DEBUG Singular | values | > 2.352e-06 will be inverted.
+2024-09-20 22:06:03 - psi4.optking.linearAlgebra DEBUG Smallest inverted value is 7.956e-01.
+2024-09-20 22:06:03 - psi4.optking.displace DEBUG 
 	             Back Transformation Report            
 	---------------------------------------------------
 	 Iter        RMS(dx)        Max(dx)        RMS(dq) 
@@ -238,18 +238,18 @@
 	    3        5.1e-09        1.2e-08        1.3e-16
 	---------------------------------------------------
 
-2024-09-20 21:44:28 - psi4.optking.displace INFO 	Successfully converged to displaced geometry.
-2024-09-20 21:44:28 - psi4.optking.displace INFO 	RMS(dx):  5.090e-09 	Max(dx):  1.219e-08 	RMS(dq):  1.282e-16
-2024-09-20 21:44:28 - psi4.optking.displace DEBUG 	Report of back-transformation: (au)
+2024-09-20 22:06:03 - psi4.optking.displace INFO 	Successfully converged to displaced geometry.
+2024-09-20 22:06:03 - psi4.optking.displace INFO 	RMS(dx):  5.090e-09 	Max(dx):  1.219e-08 	RMS(dq):  1.282e-16
+2024-09-20 22:06:03 - psi4.optking.displace DEBUG 	Report of back-transformation: (au)
 
 	  int       q_final         q_target          Error
 	---------------------------------------------------
-	    1   1.7904990786   1.7904990786   0.0000000000
-	    2   1.7904990786   1.7904990786  -0.0000000000
-	    3   1.8391577280   1.8391577280   0.0000000000
+	    1   1.7904990789   1.7904990789   0.0000000000
+	    2   1.7904990789   1.7904990789   0.0000000000
+	    3   1.8391577287   1.8391577287  -0.0000000000
 	--------------------------------------------------
 
-2024-09-20 21:44:28 - psi4.optking.displace INFO 
+2024-09-20 22:06:03 - psi4.optking.displace INFO 
 
 	        --- Internal Coordinate Step in ANG or DEG, aJ/ANG or AJ/DEG ---
 	-------------------------------------------------------------------------------
@@ -260,17 +260,17 @@
 	             B(2,1,3)     104.11993        0.00027        1.25604     105.37598
 	-------------------------------------------------------------------------------
 
-2024-09-20 21:44:28 - psi4.optking.stepAlgorithms INFO 	|target step| :    0.0354108589
-2024-09-20 21:44:28 - psi4.optking.stepAlgorithms INFO 	gradient     :   -0.0144038495
-2024-09-20 21:44:28 - psi4.optking.stepAlgorithms INFO 	hessian      :    0.4062535782
-2024-09-20 21:44:28 - psi4.optking.stepAlgorithms INFO 	|target step| :    0.0354108589
-2024-09-20 21:44:28 - psi4.optking.stepAlgorithms INFO 	gradient     :   -0.0144038495
-2024-09-20 21:44:28 - psi4.optking.stepAlgorithms INFO 	hessian      :    0.4062535782
-2024-09-20 21:44:28 - psi4.optking.stepAlgorithms DEBUG 	Projected energy change: -0.0002550263
+2024-09-20 22:06:03 - psi4.optking.stepAlgorithms INFO 	|target step| :    0.0354108589
+2024-09-20 22:06:03 - psi4.optking.stepAlgorithms INFO 	gradient     :   -0.0144038493
+2024-09-20 22:06:03 - psi4.optking.stepAlgorithms INFO 	hessian      :    0.4062535696
+2024-09-20 22:06:03 - psi4.optking.stepAlgorithms INFO 	|target step| :    0.0354108589
+2024-09-20 22:06:03 - psi4.optking.stepAlgorithms INFO 	gradient     :   -0.0144038493
+2024-09-20 22:06:03 - psi4.optking.stepAlgorithms INFO 	hessian      :    0.4062535696
+2024-09-20 22:06:03 - psi4.optking.stepAlgorithms DEBUG 	Projected energy change: -0.0002550263
 
-2024-09-20 21:44:28 - psi4.optking.stepAlgorithms INFO 	Norm of achieved step-size    0.0354108589
-2024-09-20 21:44:28 - psi4.optking.stepAlgorithms INFO 	Norm of achieved step-size (cart):    0.0231076500
-2024-09-20 21:44:28 - psi4.optking.opt_helper INFO Molsys:
+2024-09-20 22:06:03 - psi4.optking.stepAlgorithms INFO 	Norm of achieved step-size    0.0354108589
+2024-09-20 22:06:03 - psi4.optking.stepAlgorithms INFO 	Norm of achieved step-size (cart):    0.0231076500
+2024-09-20 22:06:03 - psi4.optking.opt_helper INFO Molsys:
 
 	                            ===> Fragment 1 <== 
 
@@ -284,8 +284,8 @@
 	 R(1,3)           =         1.790499           0.947491
 	 B(2,1,3)         =         1.839158         105.375976
 
-2024-09-20 21:44:28 - psi4.optking.convcheck INFO Performing convergence check.
-2024-09-20 21:44:28 - psi4.optking.convcheck INFO 
+2024-09-20 22:06:03 - psi4.optking.convcheck INFO Performing convergence check.
+2024-09-20 22:06:03 - psi4.optking.convcheck INFO 
 	                                 ==> Convergence Check <==                                  
     
 	Measures of convergence in internal coordinates in au.
@@ -301,10 +301,10 @@
 	----------------------------------------------------------------------------------------------
 
 
-2024-09-20 21:44:28 - psi4.optking.stepAlgorithms INFO 	Convergence check returned False
-2024-09-20 21:44:28 - psi4.driver.task_planner INFO PLANNING Atomic:  keywords={'SCF__GUESS': 'READ', 'G_CONVERGENCE': 'NWCHEM_LOOSE', 'SCF__INTS_TOLERANCE': 1e-12, 'function_kwargs': {}}
-2024-09-20 21:44:28 - psi4.driver.driver DEBUG GRADIENT PLAN
-2024-09-20 21:44:28 - psi4.driver.driver DEBUG {'basis': '6-31g*',
+2024-09-20 22:06:03 - psi4.optking.stepAlgorithms INFO 	Convergence check returned False
+2024-09-20 22:06:03 - psi4.driver.task_planner INFO PLANNING Atomic:  keywords={'SCF__GUESS': 'READ', 'G_CONVERGENCE': 'NWCHEM_LOOSE', 'SCF__INTS_TOLERANCE': 1e-12, 'function_kwargs': {}}
+2024-09-20 22:06:03 - psi4.driver.driver DEBUG GRADIENT PLAN
+2024-09-20 22:06:03 - psi4.driver.driver DEBUG {'basis': '6-31g*',
  'computed': False,
  'driver': <DriverEnum.gradient: 'gradient'>,
  'keywords': {'G_CONVERGENCE': 'NWCHEM_LOOSE',
@@ -312,7 +312,7 @@
               'SCF__INTS_TOLERANCE': 1e-12,
               'function_kwargs': {}},
  'method': 'hf',
- 'molecule': <psi4.core.Molecule object at 0x7fafb8109850>,
+ 'molecule': <psi4.core.Molecule object at 0x7f8cfd7fc830>,
  'opt_iter': 2,
  'owner_group': None,
  'priority': 1,
@@ -320,8 +320,8 @@
  'result': {},
  'result_id': None,
  'tag': '*'}
-2024-09-20 21:44:28 - psi4.driver.driver INFO Compute gradient(): method=hf, basis=6-31g*, molecule=default, nre=9.28716304998182
-2024-09-20 21:44:28 - psi4.driver.driver DEBUG {'elbl': array(['', '', ''], dtype='<U1'),
+2024-09-20 22:06:03 - psi4.driver.driver INFO Compute gradient(): method=hf, basis=6-31g*, molecule=default, nre=9.287163048240409
+2024-09-20 22:06:03 - psi4.driver.driver DEBUG {'elbl': array(['', '', ''], dtype='<U1'),
  'elea': array([16,  1,  1]),
  'elem': array(['O', 'H', 'H'], dtype='<U1'),
  'elez': array([8, 1, 1]),
@@ -338,92 +338,92 @@
  'provenance': {'creator': 'QCElemental', 'routine': 'qcelemental.molparse.from_string', 'version': '0.28.0'},
  'real': array([ True,  True,  True]),
  'units': 'Angstrom'}
-2024-09-20 21:44:29 - psi4.driver.driver INFO Return gradient(): -76.01072015961378
-2024-09-20 21:44:29 - psi4.driver.driver INFO [[ 0.00000000  0.00000000  0.00053442]
+2024-09-20 22:06:04 - psi4.driver.driver INFO Return gradient(): -76.01072015961323
+2024-09-20 22:06:04 - psi4.driver.driver INFO [[ 0.00000000  0.00000000  0.00053442]
  [ 0.00000000 -0.00002278 -0.00026721]
  [-0.00000000  0.00002278 -0.00026721]]
-2024-09-20 21:44:29 - psi4.optking.opt_helper DEBUG Updating hessian
-2024-09-20 21:44:29 - psi4.optking.linearAlgebra DEBUG Singular | values | > 2.352e-10 will be inverted.
-2024-09-20 21:44:29 - psi4.optking.linearAlgebra DEBUG Smallest inverted value is 7.956e-01.
-2024-09-20 21:44:29 - psi4.optking.history INFO 	Performing BFGS update.
-2024-09-20 21:44:29 - psi4.optking.history INFO 	Using 1 previous steps for update.
-2024-09-20 21:44:29 - psi4.optking.history INFO 	Steps to be used in Hessian update:  1
+2024-09-20 22:06:04 - psi4.optking.opt_helper DEBUG Updating hessian
+2024-09-20 22:06:04 - psi4.optking.linearAlgebra DEBUG Singular | values | > 2.352e-10 will be inverted.
+2024-09-20 22:06:04 - psi4.optking.linearAlgebra DEBUG Smallest inverted value is 7.956e-01.
+2024-09-20 22:06:04 - psi4.optking.history INFO 	Performing BFGS update.
+2024-09-20 22:06:04 - psi4.optking.history INFO 	Using 1 previous steps for update.
+2024-09-20 22:06:04 - psi4.optking.history INFO 	Steps to be used in Hessian update:  1
 
-2024-09-20 21:44:29 - psi4.optking.history INFO 	Updated Hessian (in au) 
+2024-09-20 22:06:04 - psi4.optking.history INFO 	Updated Hessian (in au) 
  	   0.560039   0.000757   0.007463
 	   0.000757   0.560039   0.007463
 	   0.007463   0.007463   0.155412
 
-2024-09-20 21:44:29 - psi4.optking.linearAlgebra DEBUG Singular | values | > 2.352e-06 will be inverted.
-2024-09-20 21:44:29 - psi4.optking.linearAlgebra DEBUG Smallest inverted value is 7.956e-01.
-2024-09-20 21:44:29 - psi4.optking.molsys DEBUG 
+2024-09-20 22:06:04 - psi4.optking.linearAlgebra DEBUG Singular | values | > 2.352e-06 will be inverted.
+2024-09-20 22:06:04 - psi4.optking.linearAlgebra DEBUG Smallest inverted value is 7.956e-01.
+2024-09-20 22:06:04 - psi4.optking.molsys DEBUG 
 	Internal forces in au, after projection of redundancies and constraints.
 	 -0.000144 -0.000144  0.000405
 
-2024-09-20 21:44:29 - psi4.optking.molsys INFO Projected (PHP) Hessian matrix
+2024-09-20 22:06:04 - psi4.optking.molsys INFO Projected (PHP) Hessian matrix
 	   0.560039   0.000757   0.007463
 	   0.000757   0.560039   0.007463
 	   0.007463   0.007463   0.155412
 
-2024-09-20 21:44:29 - psi4.optking.opt_helper INFO 
+2024-09-20 22:06:04 - psi4.optking.opt_helper INFO 
 	         Geometry (au)                                       Gradient (au)
-  -0.0000000000   0.0000000000   0.1214634787		   0.0000000000   0.0000000000   0.0005344186
-  -0.0000000000   1.4240670265  -0.9638567756		   0.0000000000  -0.0000227809  -0.0002672093
-   0.0000000000  -1.4240670265  -0.9638567756		  -0.0000000000   0.0000227809  -0.0002672093
+   0.0000000000   0.0000000000   0.1214634787		   0.0000000000   0.0000000000   0.0005344184
+  -0.0000000000   1.4240670271  -0.9638567754		   0.0000000000  -0.0000227810  -0.0002672092
+   0.0000000000  -1.4240670271  -0.9638567754		  -0.0000000000   0.0000227810  -0.0002672092
 
-2024-09-20 21:44:29 - psi4.optking.molsys DEBUG Converting gradient from internals to Cartesians.
+2024-09-20 22:06:04 - psi4.optking.molsys DEBUG Converting gradient from internals to Cartesians.
 
-2024-09-20 21:44:29 - psi4.optking.stepAlgorithms INFO 	Current Step Report 
+2024-09-20 22:06:04 - psi4.optking.stepAlgorithms INFO 	Current Step Report 
  
 	Current energy:       -76.0107201596
 	Energy change for the previous step:
 		Actual       :        -0.0002648776
 		Projected    :        -0.0002550263
 
-2024-09-20 21:44:29 - psi4.optking.stepAlgorithms INFO 	Energy ratio =    1.03863
-2024-09-20 21:44:29 - psi4.optking.stepAlgorithms INFO 	Energy ratio indicates good step.
-2024-09-20 21:44:29 - psi4.optking.stepAlgorithms INFO 	Intrafrag trust radius increased to      1.
-2024-09-20 21:44:29 - psi4.optking.stepAlgorithms DEBUG 	Taking RFO optimization step.
-2024-09-20 21:44:29 - psi4.optking.stepAlgorithms DEBUG 	Checking RFO solution 1.
-2024-09-20 21:44:29 - psi4.optking.stepAlgorithms INFO 	Using RFO solution 1.
-2024-09-20 21:44:29 - psi4.optking.stepAlgorithms DEBUG 	Determining step-restricting scale parameter (alpha) for RS-RFO.
-2024-09-20 21:44:29 - psi4.optking.stepAlgorithms DEBUG 
+2024-09-20 22:06:04 - psi4.optking.stepAlgorithms INFO 	Energy ratio =    1.03863
+2024-09-20 22:06:04 - psi4.optking.stepAlgorithms INFO 	Energy ratio indicates good step.
+2024-09-20 22:06:04 - psi4.optking.stepAlgorithms INFO 	Intrafrag trust radius increased to      1.
+2024-09-20 22:06:04 - psi4.optking.stepAlgorithms DEBUG 	Taking RFO optimization step.
+2024-09-20 22:06:04 - psi4.optking.stepAlgorithms DEBUG 	Checking RFO solution 1.
+2024-09-20 22:06:04 - psi4.optking.stepAlgorithms INFO 	Using RFO solution 1.
+2024-09-20 22:06:04 - psi4.optking.stepAlgorithms DEBUG 	Determining step-restricting scale parameter (alpha) for RS-RFO.
+2024-09-20 22:06:04 - psi4.optking.stepAlgorithms DEBUG 
 		 Iter    |step|        alpha      rfo_root  
 	----------------------------------------------------
 		  1    0.0026676         1            1     
-2024-09-20 21:44:29 - psi4.optking.stepAlgorithms DEBUG 	Final scaled step dq:
+2024-09-20 22:06:04 - psi4.optking.stepAlgorithms DEBUG 	Final scaled step dq:
 
 		 -0.000292 -0.000292  0.002636
 
-2024-09-20 21:44:29 - psi4.optking.displace INFO 	Determining Cartesian step for fragment 1.
-2024-09-20 21:44:29 - psi4.optking.linearAlgebra DEBUG Singular | values | > 2.352e-06 will be inverted.
-2024-09-20 21:44:29 - psi4.optking.linearAlgebra DEBUG Smallest inverted value is 7.956e-01.
-2024-09-20 21:44:29 - psi4.optking.linearAlgebra DEBUG Singular | values | > 2.351e-06 will be inverted.
-2024-09-20 21:44:29 - psi4.optking.linearAlgebra DEBUG Smallest inverted value is 7.963e-01.
-2024-09-20 21:44:29 - psi4.optking.linearAlgebra DEBUG Singular | values | > 2.351e-06 will be inverted.
-2024-09-20 21:44:29 - psi4.optking.linearAlgebra DEBUG Smallest inverted value is 7.963e-01.
-2024-09-20 21:44:29 - psi4.optking.displace DEBUG 
+2024-09-20 22:06:04 - psi4.optking.displace INFO 	Determining Cartesian step for fragment 1.
+2024-09-20 22:06:04 - psi4.optking.linearAlgebra DEBUG Singular | values | > 2.352e-06 will be inverted.
+2024-09-20 22:06:04 - psi4.optking.linearAlgebra DEBUG Smallest inverted value is 7.956e-01.
+2024-09-20 22:06:04 - psi4.optking.linearAlgebra DEBUG Singular | values | > 2.351e-06 will be inverted.
+2024-09-20 22:06:04 - psi4.optking.linearAlgebra DEBUG Smallest inverted value is 7.963e-01.
+2024-09-20 22:06:04 - psi4.optking.linearAlgebra DEBUG Singular | values | > 2.351e-06 will be inverted.
+2024-09-20 22:06:04 - psi4.optking.linearAlgebra DEBUG Smallest inverted value is 7.963e-01.
+2024-09-20 22:06:04 - psi4.optking.displace DEBUG 
 	             Back Transformation Report            
 	---------------------------------------------------
 	 Iter        RMS(dx)        Max(dx)        RMS(dq) 
 	---------------------------------------------------
 	    1        7.9e-04        1.4e-03        1.3e-06
 	    2        7.1e-07        1.5e-06        2.2e-13
-	    3        1.1e-13        1.9e-13        0.0e+00
+	    3        1.1e-13        1.9e-13        2.2e-16
 	---------------------------------------------------
 
-2024-09-20 21:44:29 - psi4.optking.displace INFO 	Successfully converged to displaced geometry.
-2024-09-20 21:44:29 - psi4.optking.displace INFO 	RMS(dx):  1.120e-13 	Max(dx):  1.932e-13 	RMS(dq):  0.000e+00
-2024-09-20 21:44:29 - psi4.optking.displace DEBUG 	Report of back-transformation: (au)
+2024-09-20 22:06:04 - psi4.optking.displace INFO 	Successfully converged to displaced geometry.
+2024-09-20 22:06:04 - psi4.optking.displace INFO 	RMS(dx):  1.120e-13 	Max(dx):  1.932e-13 	RMS(dq):  2.220e-16
+2024-09-20 22:06:04 - psi4.optking.displace DEBUG 	Report of back-transformation: (au)
 
 	  int       q_final         q_target          Error
 	---------------------------------------------------
-	    1   1.7902074942   1.7902074942   0.0000000000
-	    2   1.7902074942   1.7902074942   0.0000000000
-	    3   1.8417932855   1.8417932855   0.0000000000
+	    1   1.7902074948   1.7902074948  -0.0000000000
+	    2   1.7902074948   1.7902074948  -0.0000000000
+	    3   1.8417932861   1.8417932861  -0.0000000000
 	--------------------------------------------------
 
-2024-09-20 21:44:29 - psi4.optking.displace INFO 
+2024-09-20 22:06:04 - psi4.optking.displace INFO 
 
 	        --- Internal Coordinate Step in ANG or DEG, aJ/ANG or AJ/DEG ---
 	-------------------------------------------------------------------------------
@@ -434,17 +434,17 @@
 	             B(2,1,3)     105.37598        0.00003        0.15101     105.52698
 	-------------------------------------------------------------------------------
 
-2024-09-20 21:44:29 - psi4.optking.stepAlgorithms INFO 	|target step| :    0.0026676218
-2024-09-20 21:44:29 - psi4.optking.stepAlgorithms INFO 	gradient     :   -0.0004318249
-2024-09-20 21:44:29 - psi4.optking.stepAlgorithms INFO 	hessian      :    0.1618751918
-2024-09-20 21:44:29 - psi4.optking.stepAlgorithms INFO 	|target step| :    0.0026676218
-2024-09-20 21:44:29 - psi4.optking.stepAlgorithms INFO 	gradient     :   -0.0004318249
-2024-09-20 21:44:29 - psi4.optking.stepAlgorithms INFO 	hessian      :    0.1618751918
-2024-09-20 21:44:29 - psi4.optking.stepAlgorithms DEBUG 	Projected energy change: -0.0000005760
+2024-09-20 22:06:04 - psi4.optking.stepAlgorithms INFO 	|target step| :    0.0026676217
+2024-09-20 22:06:04 - psi4.optking.stepAlgorithms INFO 	gradient     :   -0.0004318248
+2024-09-20 22:06:04 - psi4.optking.stepAlgorithms INFO 	hessian      :    0.1618751750
+2024-09-20 22:06:04 - psi4.optking.stepAlgorithms INFO 	|target step| :    0.0026676217
+2024-09-20 22:06:04 - psi4.optking.stepAlgorithms INFO 	gradient     :   -0.0004318248
+2024-09-20 22:06:04 - psi4.optking.stepAlgorithms INFO 	hessian      :    0.1618751750
+2024-09-20 22:06:04 - psi4.optking.stepAlgorithms DEBUG 	Projected energy change: -0.0000005760
 
-2024-09-20 21:44:29 - psi4.optking.stepAlgorithms INFO 	Norm of achieved step-size    0.0026676218
-2024-09-20 21:44:29 - psi4.optking.stepAlgorithms INFO 	Norm of achieved step-size (cart):    0.0023827268
-2024-09-20 21:44:29 - psi4.optking.opt_helper INFO Molsys:
+2024-09-20 22:06:04 - psi4.optking.stepAlgorithms INFO 	Norm of achieved step-size    0.0026676217
+2024-09-20 22:06:04 - psi4.optking.stepAlgorithms INFO 	Norm of achieved step-size (cart):    0.0023827268
+2024-09-20 22:06:04 - psi4.optking.opt_helper INFO Molsys:
 
 	                            ===> Fragment 1 <== 
 
@@ -458,8 +458,8 @@
 	 R(1,3)           =         1.790207           0.947337
 	 B(2,1,3)         =         1.841793         105.526982
 
-2024-09-20 21:44:29 - psi4.optking.convcheck INFO Performing convergence check.
-2024-09-20 21:44:29 - psi4.optking.convcheck INFO 
+2024-09-20 22:06:04 - psi4.optking.convcheck INFO Performing convergence check.
+2024-09-20 22:06:04 - psi4.optking.convcheck INFO 
 	                                 ==> Convergence Check <==                                  
     
 	Measures of convergence in internal coordinates in au.
@@ -475,7 +475,7 @@
 	----------------------------------------------------------------------------------------------
 
 
-2024-09-20 21:44:29 - psi4.optking.convcheck INFO 
+2024-09-20 22:06:04 - psi4.optking.convcheck INFO 
 	                      ===> Final Convergence Report <===                     
 
 	----------------------------------------------------------------------------
@@ -488,18 +488,18 @@
 	----------------------------------------------------------------------------
 
 
-2024-09-20 21:44:29 - psi4.optking.stepAlgorithms INFO 	Convergence check returned True
-2024-09-20 21:44:29 - psi4.optking.optimize INFO 	Converged in 2 steps!
-2024-09-20 21:44:29 - psi4.optking.optimize INFO 	Final energy is    -76.0107201596138
-2024-09-20 21:44:29 - psi4.optking.optimize INFO 	Final structure (Angstroms): 
+2024-09-20 22:06:04 - psi4.optking.stepAlgorithms INFO 	Convergence check returned True
+2024-09-20 22:06:04 - psi4.optking.optimize INFO 	Converged in 2 steps!
+2024-09-20 22:06:04 - psi4.optking.optimize INFO 	Final energy is    -76.0107201596132
+2024-09-20 22:06:04 - psi4.optking.optimize INFO 	Final structure (Angstroms): 
 	Fragment 1 (Ang)
 
 	    O   0.0000000000  -0.0000000000   0.0635510896
-	    H  -0.0000000000   0.7542171530  -0.5096887324
-	    H   0.0000000000  -0.7542171530  -0.5096887324
+	    H  -0.0000000000   0.7542171534  -0.5096887323
+	    H   0.0000000000  -0.7542171534  -0.5096887323
 
 
-2024-09-20 21:44:29 - psi4.optking.optimize INFO 	Optimization Finished
+2024-09-20 22:06:04 - psi4.optking.optimize INFO 	Optimization Finished
 
 	==> Optimization Summary <==
 
@@ -513,19 +513,19 @@
 	---------------------------------------------------------------------------------------------------------------  ~
         
 	     1     -76.010455282031    -76.010455282031      0.01100778      0.00921455      0.02192212      0.02044447  ~
-	     2     -76.010720159614     -0.000264877583      0.00040525      0.00026180      0.00263556      0.00154015  ~
+	     2     -76.010720159613     -0.000264877582      0.00040525      0.00026180      0.00263556      0.00154015  ~
 	----------------------------------------------------------------------------------------------------------------
 
 
-2024-09-20 21:44:29 - psi4.optking.optimize INFO Preparing OptimizationResult
-2024-09-20 21:44:29 - psi4.driver.task_planner INFO PLANNING Atomic:  keywords={'G_CONVERGENCE': 'NWCHEM_LOOSE', 'SCF__INTS_TOLERANCE': 1e-12, 'function_kwargs': {}}
-2024-09-20 21:44:29 - psi4.driver.driver DEBUG PROPERTIES PLAN
-2024-09-20 21:44:29 - psi4.driver.driver DEBUG {'basis': '6-31g*',
+2024-09-20 22:06:04 - psi4.optking.optimize INFO Preparing OptimizationResult
+2024-09-20 22:06:04 - psi4.driver.task_planner INFO PLANNING Atomic:  keywords={'G_CONVERGENCE': 'NWCHEM_LOOSE', 'SCF__INTS_TOLERANCE': 1e-12, 'function_kwargs': {}}
+2024-09-20 22:06:04 - psi4.driver.driver DEBUG PROPERTIES PLAN
+2024-09-20 22:06:04 - psi4.driver.driver DEBUG {'basis': '6-31g*',
  'computed': False,
  'driver': <DriverEnum.properties: 'properties'>,
  'keywords': {'G_CONVERGENCE': 'NWCHEM_LOOSE', 'SCF__INTS_TOLERANCE': 1e-12, 'function_kwargs': {}},
  'method': 'hf',
- 'molecule': <psi4.core.Molecule object at 0x7fafb8109850>,
+ 'molecule': <psi4.core.Molecule object at 0x7f8cfd7fc830>,
  'owner_group': None,
  'priority': 1,
  'properties': ['GRID_ESP'],
@@ -533,8 +533,8 @@
  'result': {},
  'result_id': None,
  'tag': '*'}
-2024-09-20 21:44:29 - psi4.driver.driver INFO Compute properties(): method=hf, basis=6-31g*, molecule=default, nre=9.287163049981823
-2024-09-20 21:44:29 - psi4.driver.driver DEBUG {'elbl': array(['', '', ''], dtype='<U1'),
+2024-09-20 22:06:04 - psi4.driver.driver INFO Compute properties(): method=hf, basis=6-31g*, molecule=default, nre=9.287163048240409
+2024-09-20 22:06:04 - psi4.driver.driver DEBUG {'elbl': array(['', '', ''], dtype='<U1'),
  'elea': array([16,  1,  1]),
  'elem': array(['O', 'H', 'H'], dtype='<U1'),
  'elez': array([8, 1, 1]),
@@ -551,4 +551,4 @@
  'provenance': {'creator': 'QCElemental', 'routine': 'qcelemental.molparse.from_string', 'version': '0.28.0'},
  'real': array([ True,  True,  True]),
  'units': 'Angstrom'}
-2024-09-20 21:44:29 - psi4.driver.driver INFO Return properties(): -76.01072015958452
+2024-09-20 22:06:04 - psi4.driver.driver INFO Return properties(): -76.01072015958385
